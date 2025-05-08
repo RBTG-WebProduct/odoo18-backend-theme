@@ -504,3 +504,56 @@ a, .btn {
 .text-action {
     color:  var(--primary-accent) !important;
 }
+
+/* Enhance visibility of website publish switch */
+.o-checkbox.form-check.form-switch.d-flex.justify-content-center.m-0 {
+    /* Remove pointer-events-none when intended to be interactive */
+    &.pe-none {
+        pointer-events: auto !important;
+    }
+    
+    /* Enhance the switch appearance */
+    .form-check-input {
+        
+        /* When checked/published */
+        &:checked {
+            background-color: #28a745 !important; /* Strong green */
+            border-color: #28a745 !important;
+            box-shadow: 0 0 0 0.15rem rgba(40, 167, 69, 0.25) !important;
+            
+            &:focus {
+                box-shadow: 0 0 0 0.25rem rgba(40, 167, 69, 0.4) !important;
+            }
+        }
+        
+        /* When unchecked/unpublished */
+        &:not(:checked) {
+            background-color: #dc3545 !important; /* Strong red */
+            border-color: #dc3545 !important;
+            box-shadow: 0 0 0 0.15rem rgba(220, 53, 69, 0.25) !important;
+            
+            &:focus {
+                box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.4) !important;
+            }
+        }
+        
+        &:focus {
+            border-color: transparent !important;
+        }
+    }
+    
+    /* Improve labels if present */
+    .form-check-label {
+        font-weight: bold !important;
+    }
+}
+
+/* If the switch is inside a dropdown item */
+.dropdown-item .o-checkbox.form-check.form-switch {
+    width: 100% !important;
+    padding: 8px 12px !important;
+    
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.05) !important;
+    }
+}
