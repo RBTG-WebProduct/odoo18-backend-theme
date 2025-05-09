@@ -557,3 +557,31 @@ a, .btn {
         background-color: rgba(0, 0, 0, 0.05) !important;
     }
 }
+
+
+.customer-portal-link {
+    display: inline-flex !important;
+    align-items: center;
+    height: 100%;
+    padding: 0 12px;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+}
+
+.customer-portal-link:hover {
+    background-color: var(--primary-hover) !important;
+    text-decoration: none !important;
+}
+
+/* Make sure it stays visible even when app menu is open */
+.o_apps_menu_opened .customer-portal-link {
+    display: inline-flex !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+    .customer-portal-link {
+        font-size: 13px;
+        padding: 0 8px;
+    }
+}

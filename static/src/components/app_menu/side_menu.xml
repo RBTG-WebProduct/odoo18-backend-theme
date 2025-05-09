@@ -14,6 +14,11 @@
     <t t-inherit-mode="extension" t-inherit="web.NavBar" owl="1">
         <xpath expr="//header" position="after">
             <div class="app_components" t-ref="app_components">
+                <div class="customer-portal-container" style="position: absolute; top: 15px; left: 15px;">
+                    <a href="https://www.mythinkredbarn.com/my/home" target="_blank" class="customer-portal-link btn btn-primary btn-sm">
+                        View Your Customer Portal
+                    </a>
+                </div>
                 <div class="company_logo_container">
                     <img src="/jazzy_backend_theme/static/src/img/rblogo.webp" alt="Company Logo" class="company_logo"/>
                 </div>
