@@ -44,7 +44,7 @@
             'jazzy_backend_theme/static/src/components/app_menu/search_apps.js',
         ],
         'web.assets_frontend': [
-            'jazzy_backend_theme/static/src/layout/style/login.scss'
+            # 'jazzy_backend_theme/static/src/layout/style/login.scss'
         ],
     },
     'images': [
